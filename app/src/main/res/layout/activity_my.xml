@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <EditText android:id="@+id/edit_message"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_message"/>
+    <Button
+        android:id="@+id/send_message1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/edit_message"
+        android:text="@string/button_send"/>
+    <EditText android:id="@+id/edit_message2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_message"
+        android:hint="@string/edit_message"/>
+    <Button
+        android:id="@+id/send_message2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_message"
+        android:layout_toRightOf="@+id/edit_message2"
+        android:text="@string/button_send"/>
+</RelativeLayout>
